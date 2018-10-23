@@ -8,9 +8,10 @@ import { Producto } from '../interfaces/producto.interface';
 
 export class ProductosService {
 
-  // bamdrea de cargando productor //
+  // bamdera de cargando productor //
   cargando = true;
   productos: Producto[] = [];
+  productosFiltrado: Producto[] = [];
 
   constructor( private http: HttpClient ) {
     this.cargarProductos();
